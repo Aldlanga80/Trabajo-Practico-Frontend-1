@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  background: white;
+  color: black;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  border-bottom: 1px solid turquoise;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: aquamarine;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  ;
+}
+
+.nav-list a {
+  padding-block: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-list a:active,
+.nav-list a:hover {
+  border-color: aqua;
+  color: aquamarine;
+}
+
+.perfil {
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: whitesmoke;
+  margin-bottom: 16px;
+}
+
+.perfil h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  color: aquamarine;
+  font-size: 20px;
+}
+
+section {
+  padding: 32px;
+  max-width: 800px;
+  margin: auto
+}
