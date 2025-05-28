@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/*#000080 -- azul marino*/
+/*#FFDB58 -- mostaza*/
+
 body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.5;
@@ -19,8 +22,8 @@ a {
 }
 
 header {
-  background: #FFDB58;
-  border-bottom: 2px solid #000080;
+  background: #000080;
+  border-bottom: 2px solid white;
   padding: 16px 32px;
   position: sticky;
   top: 0;
@@ -36,14 +39,14 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 20px;
-  color: #000080;
+  color: white;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
   gap: 24px;
-  color: #000080;
+  color: white;
 }
 
 
@@ -58,43 +61,54 @@ nav {
   color: aquamarine;
 }
 
+
 .perfil {
-  text-align: center;
+  width: 100vw;
   padding: 48px 32px;
+  background: #FFDB58;
+
 }
 
+.perfil-cont {
+  text-align: center
+}
+
+
 .avatar {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  background: whitesmoke;
   margin-bottom: 16px;
 }
 
 .perfil h1 {
   font-size: 36px;
   margin-bottom: 8px;
+  color: white;
 }
 
 .subtitulo {
-  color: aquamarine;
+  color: white;
   font-size: 20px;
+  font-weight: bold;
 }
 
 section {
   padding: 32px;
   max-width: 800px;
-  margin: auto
+  margin: auto;
+  margin-top: 20px;
 }
 
 section h2 {
-  color: aquamarine;
+  color: #000080;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
 .about-me {
   padding: 5px;
+  font-weight: bold;
 }
 
 .projects-list {
@@ -104,9 +118,9 @@ section h2 {
 }
 
 .projects-card {
-  background: antiquewhite;
+  background: #FFDB58;
   border-radius: 10px;
-  border-left: 5px solid aqua;
+  border-left: 5px solid #000080;
   animation: aparecer 3s alternate forwards;
 }
 
@@ -122,8 +136,13 @@ section h2 {
   }
 }
 
+.projects-card p {
+  color: white;
+  font-weight: 700;
+}
+
 .skills-list u {
-  color: turquoise;
+  color: #FFDB58;
   font-weight: bold;
 }
 
@@ -147,7 +166,9 @@ section h2 {
 
 .footer {
   position: relative;
-  background: aqua;
+  background: #000080;
+  color: white;
+  font-weight: 500;
 }
 
 .footer p {
