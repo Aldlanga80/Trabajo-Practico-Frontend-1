@@ -10,7 +10,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.5;
-  background: white;
+  background: rgb(236, 218, 218);
   color: black;
   padding: 0;
   height: 100vh;
