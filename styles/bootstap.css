@@ -1,0 +1,156 @@
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ /*#000080 -- azul marino*/
+ /*#FFDB58 -- mostaza*/
+
+ body {
+   font-family: 'Courier New', Courier, monospace;
+   line-height: 1.5;
+   padding: 0;
+   height: 100vh;
+ }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .logo {
+   font-weight: bold;
+   font-size: 20px;
+   color: white;
+ }
+
+ .nav-list {
+   list-style: none;
+   display: flex;
+   gap: 24px;
+   color: white;
+ }
+
+
+ .nav-list a {
+   padding-block: 3px;
+   border-bottom: 2px solid transparent;
+ }
+
+ .nav-list a:active,
+ .nav-list a:hover {
+   border-color: aqua;
+   color: aquamarine;
+ }
+
+
+ .perfil {
+   width: 100vw;
+   padding: 48px 32px;
+   background: #FFDB58;
+
+ }
+
+ .perfil-cont {
+   text-align: center
+ }
+
+
+ .avatar {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   margin-bottom: 16px;
+ }
+
+ .perfil h1 {
+   font-size: 36px;
+   margin-bottom: 8px;
+   color: white;
+ }
+
+ .subtitulo {
+   color: white;
+   font-size: 20px;
+   font-weight: bold;
+ }
+
+ section {
+   padding: 32px;
+   max-width: 800px;
+   margin: auto;
+   margin-top: 20px;
+ }
+
+ section h2 {
+   font-weight: bold;
+   margin-bottom: 16px;
+ }
+
+ .about-me {
+   padding: 5px;
+   font-weight: bold;
+ }
+
+ .projects-list {
+   display: grid;
+   gap: 24px;
+   grid-template-columns: repeat(auto-fit, minmax (240px 1fp));
+ }
+
+ .projects-card {
+   background: #FFDB58;
+   border-radius: 10px;
+   animation: aparecer 3s alternate forwards;
+ }
+
+ @keyframes aparecer {
+   from {
+     opacity: 0;
+     transform: translateX(20px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+
+ .projects-card p {
+   color: white;
+   font-weight: 700;
+ }
+
+ .skills-list u {
+   color: #FFDB58;
+   font-weight: bold;
+ }
+
+ .contact-icons img {
+   width: 100%;
+ }
+
+ .contact-icons {
+   width: 80px;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   padding: 20px;
+ }
+
+ .section-footer {
+   position: absolute;
+   top: 100px;
+   left: 200px;
+ }
+
+ .footer {
+   position: relative;
+   color: white;
+   font-weight: 500;
+ }
+
+ .footer p {
+   text-align: center;
+ }
